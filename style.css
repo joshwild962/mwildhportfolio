@@ -1,0 +1,134 @@
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  padding-top: 76px;
+  min-height: 100vh; /* Memastikan body minimal setinggi layar */
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+    background-color: #202020;
+    font-size: large;
+    font-weight: 600;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+.nav-item {
+  margin-right: 20px;
+  transition: all 0.9s ease; /* Menambahkan efek transisi */
+  filter: grayscale(100%); /* Awalnya hitam-putih (opsional) */  
+}
+
+.nav-item :hover {
+  transform: scale(1.1); /* Memperbesar saat di-hover */
+  filter: grayscale(0%); /* Kembali berwarna */
+  opacity: 0.8; /* Sedikit transparan */
+}
+
+.circle-logo {
+    width: 50px; /* Atur ukuran gambar logo */
+    height: 50px; /* Atur ukuran gambar logo */
+    object-fit: cover; /* Menjaga agar gambar memenuhi frame tanpa terdistorsi */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    border: 0px solid #000; /* Menambahkan border untuk frame */
+    margin-right: 10px; /* Memberikan jarak antara gambar dan teks nama situs */
+} 
+
+.jumbotron {
+    position: relative;
+    background-image: url('karya1.jpg'); /* Gambar jumbotron */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Hitam dengan transparansi 50% */
+    z-index: 1;
+  }
+
+.jumbotron .container {
+    position: relative;
+    z-index: 2; /* Menempatkan teks di atas overlay */
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+  align-items: center;
+  gap: 10px;
+  }
+
+.foto {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  
+.more {
+  margin-left: 30px;
+  color: #878787; /* Ganti dengan warna yang diinginkan */
+  text-decoration: underline; /* Menghapus garis bawah */
+}
+
+.carousel-inner-home {
+  display: flex;
+  align-items: center;
+  height: 300px;
+}
+
+.section-heading {
+  border-left: 4px solid #000; /* Garis kiri */
+  padding-left: 10px;  /* Memberikan jarak antara teks dan garis */
+  margin-left: 20px;   /* Memberikan margin di sisi kiri */
+}
+
+.card-img {
+  width: 100%; /* Mengisi lebar penuh card */
+  height: 300px; /* Tinggi tetap untuk gambar */
+  object-fit: cover; /* Memastikan gambar tetap proporsional */
+  object-position: center; /* Mengatur posisi gambar */
+}
+
+footer {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+  }
+
+.social {
+  font-size: large;
+  font-weight: bold;
+}
+
+.social-media {
+  transition: all 0.3s ease; /* Menambahkan efek transisi */
+  filter: grayscale(100%); /* Awalnya hitam-putih (opsional) */
+}
+
+.social-media :hover {
+  transform: scale(1.2); /* Memperbesar saat di-hover */
+  filter: grayscale(0%); /* Kembali berwarna */
+  opacity: 0.8; /* Sedikit transparan */
+}
+
+.teks {
+  font-size: smaller;
+  margin-left: 30px;
+}
