@@ -3,211 +3,152 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>mwildh</title>
+    <title>Home | mwildh</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <!-- awal navbar -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white">
-                <img src="asset/mwh.png" alt="ini logo" class="circle-logo" width="60" height="48">mwildh
+    <!-- navbar start-->
+    <nav class="navbar navbar-expand-lg bg-dark container-fluid fw-bold">
+        <div class="container-fluid mx-5">
+            <a class="navbar-brand text-light" href="index.html">
+                <img src="asset/logo.png" alt="Logo" width="30" height="30" class="rounded-circle d-inline-block align-text-top">
+                mwildh
             </a>
-          <div class="navbar-nav ms-auto">
-            <ul class="navbar-nav gap-4">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="artworks.html">Artworks</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">About</a>
-              </li>
-          </ul>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto gap-4">
+                    <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link text-light" aria-current="page" href="portfolio/portfolio.html">Portfolio</a>
+                    <a class="nav-link text-light" aria-current="page" href="artworks/artworks.html">Artworks</a>
+                    <a class="nav-link text-light" aria-current="page" href="about/about.html">About</a>
+                </div>
+          </div>
         </div>
-      </div>
     </nav>
-    <!-- Awal jumbotron -->
-    <section class="jumbotron" style="background-image: url('asset/carousel1.png'); background-size: cover; background-position: center center; color: white; padding: 100px 0;">
-      <div class="container text-center">
-        <h1 class="display-4">Be Patience</h1>
-        <p class="lead">this page still in progress</p>
-      </div>
+    <!-- navbar end -->
+    <div class="bg-color">
+    <!-- jumbotron start-->
+    <section class="jumbotron" style="background-image: url('asset/jumbotron.png'); background-size: cover; background-position: center center; color: white; padding: 100px 0;">
+        <div class="teks-jumbotron text-center">
+          <h1 class="display-4">Be Patience</h1>
+          <p class="lead">this page still in progress</p>
+        </div>
     </section>
-    <!-- konten utama -->
-    <div class="main-content m-5">
-    <!-- awal portfolio -->
-      <div class="d-flex justify-content-between align-items-center mb-3"><h4 class="section-heading">Portfolio</h4><a class="more" href="portfolio.html">more</a></div>
-      <hr>
-      <!-- carousel -->
-      <div id="carouselExampleCaptions" class="carousel slide mb-5">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="bg-dark active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner-home">
-          <!-- slide 1 -->
-          <div class="carousel-item active">
-            <div class="container text-center">
-              <div class="row">
-                <div class="col-4">
-                  <div class="image-container-home"><img src="..." class="d-block w-100" alt="blom bikin euy"></div>
-                </div>
-                <div class="col-4">
-                  <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                </div>
-                <div class="col-4">
-                  <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                </div>
-              </div>
+    <!-- jumbotron end -->
+    <!-- carousel 1 start -->
+    <div class="mx-5 p-3">
+        <div class="d-flex justify-content-between align-items-center mt-3"><h4 class="section-heading">Portfolio</h4><a class="more" href="portfolio/portfolio.html">more</a></div>
+    <hr>
+        <div id="carouselportfolio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-          </div>
-          <!-- slide 2 -->
-          <div class="carousel-item">
-            <div class="container text-center">
-              <div class="row">
-                <div class="col-4">
-                  <div class="image-container-home"><img src="asset/carousel2.png" class="d-block w-100" alt="..."></div>
-                </div>
-                <div class="col-4">
-                  <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                </div>
-                <div class="col-4">
-                  <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- slide 3 -->
-          <div class="carousel-item">
-            <div class="container text-center">
-              <div class="row">
-                <div class="col-4">
-                  <div class="image-container-home"><img src="asset/carousel2.png" class="d-block w-100" alt="..."></div>
-                </div>
-                <div class="col-4">
-                  <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                </div>
-                <div class="col-4">
-                  <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end slide -->
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- end carousel -->
-      
-    <!-- awal latest artwork -->
-    <div class="d-flex justify-content-between align-items-center mb-3"><h4 class="section-heading">Latest Artworks</h4><a class="more" href="artworks.html">more</a></div>
-      <hr>
-        <!-- carousel -->
-        <div id="carouselOne" class="carousel slide mb-5">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="bg-dark active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner-home">
-            <!-- slide 1 -->
-            <div class="carousel-item active">
-              <div class="container text-center">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <div class="row">
-                  <div class="col-4">
-                    <div class="image-container-home"><img src="asset/carousel2.png" class="d-block w-100" alt="..."></div>
-                  </div>
-                  <div class="col-4">
-                    <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                  </div>
-                  <div class="col-4">
-                    <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                  </div>
-                </div>
+                    <div class="col-4"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="asset/carousel2.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="asset/carousel3.png" class="d-block w-100" alt="..."></div>
+                 </div>
               </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="carousel-item">
-              <div class="container text-center">
+              <div class="carousel-item">
                 <div class="row">
-                  <div class="col-4">
-                    <div class="image-container-home"><img src="asset/carousel2.png" class="d-block w-100" alt="..."></div>
-                  </div>
-                  <div class="col-4">
-                    <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                  </div>
-                  <div class="col-4">
-                    <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                  </div>
-                </div>
+                    <div class="col-4"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="asset/carousel2.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="asset/carousel3.png" class="d-block w-100" alt="..."></div>
+                 </div>
               </div>
-            </div>
-            <!-- slide 3 -->
-            <div class="carousel-item">
-              <div class="container text-center">
+              <div class="carousel-item">
                 <div class="row">
-                  <div class="col-4">
-                    <div class="image-container-home"><img src="asset/carousel2.png" class="d-block w-100" alt="..."></div>
-                  </div>
-                  <div class="col-4">
-                    <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                  </div>
-                  <div class="col-4">
-                    <div class="image-container-home"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
-                  </div>
-                </div>
+                    <div class="col-4"><img src="asset/carousel1.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="asset/carousel2.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="asset/carousel3.png" class="d-block w-100" alt="..."></div>
+                 </div>
               </div>
             </div>
-            <!-- end slide -->
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <!-- end carousel -->
-        <!-- card -->
-        <div class="card text-bg-dark">
-          <img src="asset/eva 01.png" class="card-img" alt="please wait">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Eva 01</h5>
-            <p class="card-text">Just finished evangelion series, the "robot" looks cool. But in the end i don't understand what happen.</p>
-            <p class="card-text"><small>Updated few months ago</small></p>
-          </div>
-        </div>
-        <!-- end card -->
-      </div>
-      <!-- end main content -->
-    <footer class="py-3">
-      <div class="container text-center">
-        <div>
-          <div class="social d-flex justify-content-center gap-4 mb-3">
-            <a href="https://www.instagram.com/muhammadwhabiibi/" target="_blank" class="social-media text-white"><i class="fa-brands fa-instagram fa-2x"></i></a> |
-            <a href="https://cara.app/wildanh/all" target="_blank" class="social-media text-white"><i class="fa-solid fa-c fa-2x"></i></a>
-          </div>
-        </div>
-        <p class="teks text-center mb-1">&copy;2024 mwildh | All rights reserved.</p>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselportfolio" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselportfolio" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+    </div>      
+    <!-- carousel 1 end -->
+    <!-- carousel 2 start -->
+    <div class="mx-5 p-3">
+        <div class="d-flex justify-content-between align-items-center mt-3"><h4 class="section-heading">Latest Artworks</h4><a class="more" href="artworks/artworks.html">more</a></div>
+    <hr>
+        <div id="carouselportfolio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-4"><img src="artworks/asset/artworks7.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="artworks/asset/ikan paus.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="artworks/asset/artworks6.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-4"><img src="artworks/asset/eva 01.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="artworks/asset/artworks5.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="artworks/asset/artworks4.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-4"><img src="artworks/asset/artworks3.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="artworks/asset/artworks2.png" class="d-block w-100" alt="..."></div>
+                    <div class="col-4"><img src="artworks/asset/artworks1.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselportfolio" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselportfolio" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
     </div>
+    <!-- carousel 2 end -->
+    <!-- card start -->
+    <div class="card text-bg-dark my-5 mx-5">
+        <img src="asset/eva 01.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Eva-01</h5>
+          <p class="card-text">Just finished watching NGE few months ago, the "robot" looks cool and i end up making this.</p>
+          <p class="card-text"><small>Last updated unknown</small></p>
+        </div>
+    </div>
+    <!-- card end -->
+     <!-- footer start --> 
+    <footer class="bg-dark">
+        <div class="mx-5 p-1">
+            <div>
+                <div class="social d-flex justify-content-center gap-4 p-3">
+                  <a href="https://www.instagram.com/muhammadwhabiibi/" target="_blank" class="social-media text-white"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                  <a href="https://cara.app/wildanh/all" target="_blank" class="social-media text-white"><i class="fa-solid fa-c fa-2x"></i></a>
+                </div>
+              </div>
+              <hr class="my-2" style="border-color: white;">
+              <p class="text-white text-end">&copy;2024 mwildh | All rights reserved.</p>
+        </div>
     </footer>
+    <!-- footer end -->
+    </div>      
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/00c6b5105d.js" crossorigin="anonymous"></script>
