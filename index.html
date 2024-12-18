@@ -10,8 +10,8 @@
   </head>
   <body>
     <!-- navbar start-->
-    <nav class="navbar navbar-expand-lg bg-dark container-fluid fw-bold">
-        <div class="container-fluid mx-5">
+    <nav class="desktop-nav navbar navbar-expand-lg bg-dark container-fluid fw-bold sticky-top">
+        <div class="container mx-5">
             <a class="navbar-brand text-light" href="index.html">
                 <img src="asset/logo.png" alt="Logo" width="30" height="30" class="rounded-circle d-inline-block align-text-top">
                 mwildh
@@ -27,7 +27,7 @@
         </div>
     </nav>
     <!-- navbar end -->
-    <div class="bg-color">
+    <div class="desktop bg-color">
     <!-- jumbotron start-->
     <section class="jumbotron" style="background-image: url('asset/jumbotron.png'); background-size: cover; background-position: center center; color: white; padding: 100px 0;">
         <div class="teks-jumbotron text-center">
@@ -148,7 +148,175 @@
         </div>
     </footer>
     <!-- footer end -->
-    </div>      
+    </div>
+
+    <!-- mobile version -->
+    <nav class="mobile-nav navbar navbar-dark bg-dark navbar-expand-lg bg-dark container-fluid fw-bold sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="asset/logo.png" alt="Logo" width="30" height="30" class="rounded-circle d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold" id="offcanvasDarkNavbarLabel">mwildh</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="mobile-navbar-nav justify-content-end flex-grow-1 pe-3 list-unstyled">
+              <li class="nav-item m-3">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item m-3">
+                <a class="nav-link active" aria-current="page" href="portfolio/portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item m-3">
+                <a class="nav-link active" aria-current="page" href="artworks/artworks.html">Artworks</a>
+              </li>
+              <li class="nav-item m-3">
+                <a class="nav-link active" aria-current="page" href="about/about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile version  nav end -->
+    <div class="mobile bg-color">
+      <!-- jumbotron start -->
+      <section class="jumbotron" style="background-image: url('asset/jumbotron.png'); background-size: cover; background-position: center center; color: white; padding: 10vh 0;">
+        <div class="teks-jumbotron text-center">
+        </div>
+      </section>
+      <div class="container bg-dark text-light p-1 pt-2 text-center">
+        <h1>Be Patience</h1>
+        <p>this page still in progress</p>
+      </div>
+      <!-- jumbotron end -->
+      <!-- carousel1 start -->
+      <div class="p-3">
+        <div class="d-flex justify-content-between align-items-center mt-3"><h4 class="section-heading">Portfolio</h4><a class="more" href="artworks/artworks.html">more</a></div>
+      <hr>
+      <div id="carouselportfolio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-12"><img src="artworks/asset/ikan paus.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12"><img src="artworks/asset/eva 01.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12"><img src="artworks/asset/ikan paus.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12"><img src="artworks/asset/eva 01.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12"><img src="artworks/asset/ikan paus.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselportfolio" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselportfolio" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+      </div>
+      <!-- carousel1 end -->
+      <!-- carousel2 start -->
+      <div class="p-3">
+        <div class="d-flex justify-content-between align-items-center mt-3"><h4 class="section-heading">Latest Artworks</h4><a class="more" href="artworks/artworks.html">more</a></div>
+      <hr>
+      <div id="carouselportfolio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselportfolio" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-12"><img src="artworks/asset/ikan paus.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12"><img src="artworks/asset/eva 01.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12"><img src="artworks/asset/ikan paus.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12"><img src="artworks/asset/eva 01.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12"><img src="artworks/asset/ikan paus.png" class="d-block w-100" alt="..."></div>
+                 </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselportfolio" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselportfolio" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+      </div>
+      <!-- carousel2 end -->
+      <!-- card start -->
+      <div class="card text-bg-dark my-3 mx-3">
+        <img src="asset/eva 01.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Eva-01</h5>
+          <p class="card-text"><small>Last updated unknown</small></p>
+        </div>
+      </div>
+      <!-- card end -->     
+      <!-- footer start -->
+      <footer class="bg-dark">
+        <div class="mx-5 p-1">
+          <div>
+              <div class="social d-flex justify-content-center gap-4 p-3">
+                <a href="https://www.instagram.com/muhammadwhabiibi/" target="_blank" class="social-media text-white"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://cara.app/wildanh/all" target="_blank" class="social-media text-white"><i class="fa-solid fa-c fa-2x"></i></a>
+              </div>
+            </div>
+            <hr class="my-2" style="border-color: white;">
+            <p class="text-white text-center my-0">&copy;2024 mwildh</p>
+            <p class="text-white text-center my-0">All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/00c6b5105d.js" crossorigin="anonymous"></script>
